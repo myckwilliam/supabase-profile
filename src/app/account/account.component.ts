@@ -2,11 +2,12 @@ import { Component, inject, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SupabaseService, Profile } from '../supabase.service';
 import { Session } from '@supabase/supabase-js';
+import { AvatarComponent } from '../avatar/avatar.component';
 
 @Component({
   selector: 'app-account',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AvatarComponent],
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css'],
 })
