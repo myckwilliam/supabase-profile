@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SupabaseService } from './supabase.service';
+import { SupabaseService } from '../supabase.service';
 
 @Component({
   selector: 'app-auth',

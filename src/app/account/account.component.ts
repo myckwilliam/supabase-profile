@@ -1,6 +1,6 @@
 import { Component, inject, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SupabaseService, Profile } from './supabase.service';
+import { SupabaseService, Profile } from '../supabase.service';
 import { Session } from '@supabase/supabase-js';
 
 @Component({
