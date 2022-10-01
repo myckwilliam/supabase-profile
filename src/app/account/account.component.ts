@@ -15,9 +15,8 @@ export class AccountComponent implements OnInit {
   loading = false;
   profile: Profile | undefined;
 
-  @Input() session: Session | undefined;
-
   private readonly supabase = inject(SupabaseService);
+  session = this.supabase.session;
 
   ngOnInit() {
     this.getProfile();
