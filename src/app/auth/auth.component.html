@@ -1,0 +1,19 @@
+<div class="row flex-center flex">
+  <form class="col-6 form-widget">
+    <h1 class="header">Supabase + Angular</h1>
+    <p class="description">Sign in via magic link with your email below</p>
+    <div>
+      <input #input class="inputField" type="emial" placeholder="Your email" />
+    </div>
+    <div>
+      <button
+        class="button block"
+        type="submit"
+        (click)="handleLogin(input.value)"
+        [disabled]="loading"
+      >
+        {{ loading ? "loading" : "Send magic link" }}
+      </button>
+    </div>
+  </form>
+</div>
