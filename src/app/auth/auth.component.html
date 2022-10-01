@@ -1,18 +1,34 @@
 <div class="row flex-center flex">
   <form class="col-6 form-widget">
-    <h1 class="header">Supabase + Angular</h1>
-    <p class="description">Sign in via magic link with your email below</p>
+    <h1 class="header" [style]="{ 'text-align': 'center' }">
+      Supabase + Angular
+    </h1>
+    <h2 class="description">{{ title }}</h2>
     <div>
-      <input #input class="inputField" type="emial" placeholder="Your email" />
+      <input #email class="inputField" type="email" placeholder="Your email" />
+    </div>
+    <div>
+      <input
+        #password
+        class="inputField"
+        type="password"
+        placeholder="Your password"
+      />
+      <p
+        [style]="{ 'text-align': 'end', cursor: 'pointer' }"
+        (click)="switchAction()"
+      >
+        {{ altOption }}
+      </p>
     </div>
     <div>
       <button
         class="button block"
         type="submit"
-        (click)="handleLogin(input.value)"
+        (click)="callAction(email.value, password.value)"
         [disabled]="loading"
       >
-        {{ loading ? "loading" : "Send magic link" }}
+        {{ loading ? "loading" : buttonText }}
       </button>
     </div>
   </form>
