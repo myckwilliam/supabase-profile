@@ -1,3 +1,4 @@
+import { environment } from 'src/environments/environment';
 import { Component, inject, OnInit } from '@angular/core';
 
 import { SupabaseService } from './supabase.service';
@@ -9,6 +10,7 @@ import { SupabaseService } from './supabase.service';
 })
 export class AppComponent implements OnInit {
   private readonly supabase = inject(SupabaseService);
+  env = environment;
 
   session = this.supabase.session;
 
