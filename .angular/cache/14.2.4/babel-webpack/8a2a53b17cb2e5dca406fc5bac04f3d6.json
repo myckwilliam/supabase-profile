@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const version = '1.7.5';","map":{"version":3,"names":["version"],"sources":["C:/Users/Sergipetec/Documents/supabase-angular/node_modules/@supabase/realtime-js/dist/module/lib/version.js"],"sourcesContent":["export const version = '1.7.5';\n"],"mappings":"AAAA,OAAO,MAAMA,OAAO,GAAG,OAAhB"},"metadata":{},"sourceType":"module"}
